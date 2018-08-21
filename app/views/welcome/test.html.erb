@@ -1,0 +1,32 @@
+<div class ="row">
+	<div class="col-md-6">
+		<div class="card">
+			<div class="card-header bg-success">
+				<h1 class="card-title">Forecast for <%= @location %></h1>
+				
+			</div>
+			<div class="row">
+				<div class="card-body">
+					<div class="col-md-7">
+						<p>
+							Temeprature is <%= @temp %>&deg;F
+						</p>
+						<p>
+							Cloud Cover: <%= @cloudiness %>%
+						</p>
+						<p>
+							Wind: <%= @windiness %> mph
+						</p>
+					</div>
+					<div class="col-md-5">
+						<p>
+							<%= @weather_words%>
+							<img src="http://openweathermap.org/img/w/<%= @weather_icon %>.png">
+						</p>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
